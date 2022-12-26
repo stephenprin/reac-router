@@ -22,11 +22,19 @@ const StyledNavbar = () => {
         Products
       </NavLink>
       <NavLink
+        to='/dashboard'
+        className={({ isActive }) => (isActive ? 'link active' : 'link')}
+      >
+        Dashboard
+      </NavLink>
+      <NavLink
         to='/login'
         className={({ isActive }) => (isActive ? 'link active' : 'link')}
       >
         Login
       </NavLink>
+
+     
     </nav>
   );
 };

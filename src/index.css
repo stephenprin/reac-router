@@ -183,6 +183,9 @@ ul {
 .form {
   width: 90vw;
   max-width: 400px;
+  
+ 
+  align-items: center;
   background: var(--white);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
