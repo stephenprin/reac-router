@@ -8,6 +8,7 @@ import SharedLayout from './pages/SharedLayout';
 import Products from './pages/Products';
 import SingleProducts from './pages/SingleProduct';
 import Login from './pages/Login';
+import ProtectedRoute from './pages/ProtectedRoute';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -18,7 +19,7 @@ function App() {
       <Route index element={<Home />} />
       <Route path='about' element={<About />} />
           <Route path='dashboard' element={
-            <ProtectedRoute>
+            <ProtectedRoute user={user}>
               <Dashboard user={user} />
             </ProtectedRoute>
           } />
